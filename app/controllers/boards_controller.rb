@@ -13,6 +13,10 @@ class BoardsController < ApplicationController
     redirect_to boards_path, notice: "投稿しました。"
   end
 
+  def show
+    @board = Board.find(params[:id])
+  end
+
   private
 
   def board_params
