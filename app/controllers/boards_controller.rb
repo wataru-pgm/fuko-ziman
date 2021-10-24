@@ -1,4 +1,8 @@
 class BoardsController < ApplicationController
+  def index
+    @boards = Board.all
+  end
+
   def new
     @board = Board.new
   end
@@ -6,7 +10,7 @@ class BoardsController < ApplicationController
   def create
     @board = Board.new(board_params)
     @board.save
-    redirect_to :boards_path, notice: "投稿しました。"
+    redirect_to boards_path, notice: "投稿しました。"
   end
 
   private
