@@ -1,5 +1,5 @@
 <h1 class='is-size-1'>一覧画面</h1>
 <p>タイトル</p>
 <% @boards.each do |board| %>
-  <span><%= link_to board.title, "/board/#{board.id}" %></span>
+  <span><%= link_to board.title, "/boards/#{board.id}" %></span>
 <% end %>
