@@ -1,4 +1,4 @@
 class Board < ApplicationRecord
-  validates :title, presemce: true
+  validates :title, presence: true
   validates :body, presence: true
 end
