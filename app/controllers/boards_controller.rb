@@ -1,6 +1,7 @@
 class BoardsController < ApplicationController
+
   def index
-    @boards = Board.all
+    @pagy, @boards = pagy(Board.all)
   end
 
   def new
