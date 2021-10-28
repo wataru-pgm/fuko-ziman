@@ -18,6 +18,13 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:id])
   end
 
+  def likes
+    @board = Board.find(params[:board_id])
+    @like = @board.likes
+    @like += 1
+    @board.update(likes: @like)
+  end
+
   private
 
   def board_params
