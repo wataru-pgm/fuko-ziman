@@ -3,7 +3,7 @@ class CreateBoards < ActiveRecord::Migration[6.1]
     create_table :boards do |t|
       t.string :title, null: false
       t.text :body, null: false
-      t.integer :like
+      t.integer :likes, default: 0
 
       t.timestamps
     end
