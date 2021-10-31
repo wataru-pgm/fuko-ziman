@@ -21,7 +21,7 @@ class BoardsController < ApplicationController
   def likes
     @board = Board.find(params[:board_id])
     @like = @board.likes
-    @like += 1
+    @like += 100
     @board.update(likes: @like)
   end
 
