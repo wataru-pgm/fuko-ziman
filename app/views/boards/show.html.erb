@@ -1,5 +1,8 @@
 <h1 class='is-size-1'>詳細画面</h1>
-<p>この不幸自慢は合計で<%= @board.likes %>円もらいました！</p>
+<p>この不幸自慢は合計で
+  <sapan id="js-board-likes"><%= @board.likes %></sapan>
+  円もらいました！
+</p>
 
 <h2 class='is-size-3'>タイトル</h2>
 <p><%= @board.title %></p>
@@ -7,7 +10,7 @@
 <h2 class='is-size-3'>内容</h2>
 <p><%= @board.body %></p>
 
-<%= link_to board_likes_path(@board), class: "level-item", method: :post do %>
+<%= link_to board_likes_path(@board), class: "level-item", method: :post, remote: true do %>
   <i class="fas fa-yen-sign">100</i>
 <% end %>
 
