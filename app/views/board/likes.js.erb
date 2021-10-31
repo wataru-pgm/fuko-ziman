@@ -1,1 +1,1 @@
-$("#js-board-likes").replace("<%= j(render(board_likes_path(@board), @board.likes )) %>");
+$("#js-board-likes").replaceWith("<%= j(render("board_likes_path(@board)", board: @board.likes)) %>");
