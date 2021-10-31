@@ -1,1 +1,1 @@
-$("#js-board-likes-<%= @board.id %>").replaceWith("<%= j(@board.likes) %>");
+$("#js-board-likes-<%= @board.id %>").replaceWith("<span id=js-board-likes-" + <%= j(@board.id) %> + ">" + <%= j(@board.likes) %> + "</span>");
