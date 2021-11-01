@@ -1,7 +1,7 @@
 class BoardsController < ApplicationController
 
   def index
-    @pagy, @boards = pagy(Board.all)
+    @pagy, @boards = pagy(Board.all.order(created_at: :desc))
   end
 
   def new
