@@ -27,6 +27,10 @@ class BoardsController < ApplicationController
     @board.update(likes: @like)
   end
 
+  def ranking
+    @pagy, @ranking_boards = pagy(Board.all.order(likes: :desc))
+  end
+
   private
 
   def board_params
