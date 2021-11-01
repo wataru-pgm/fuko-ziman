@@ -8,7 +8,9 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <%= link_to '一覧画面', boards_path, class: "button" %>
+          <% unless current_page?(root_path)||current_page?(boards_path) %>
+            <%= link_to '一覧画面', boards_path, class: "button" %>
+          <% end %>
         </div>
       </div>
     </div>
