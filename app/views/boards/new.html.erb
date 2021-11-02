@@ -1,11 +1,13 @@
 <h2 class='is-size-3'>新規投稿</h2>
 
 <%= form_with model: @board, local: true do |f| %>
-  <article class="message is-danger">
-    <div class="message-body">
-      <%= render 'shared/error_messages', object: f.object %>
-    </div>
-  </article>
+  <% if @board.errors.any? %>
+    <article class="message is-danger">
+      <div class="message-body">
+        <%= render 'shared/error_messages', object: f.object %>
+      </div>
+    </article>
+  <% end %>
 
   <%= f.label :title, 'タイトル' %>
   <%= f.text_field :title, placeholder: "タイトル" %>
