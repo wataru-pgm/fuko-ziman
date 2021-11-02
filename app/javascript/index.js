@@ -6,6 +6,6 @@ jQuery(function($){
         // クリックしたタブからインデックス番号を取得
 		const index = $(this).index();
         // クリックしたタブと同じインデックス番号をもつコンテンツを表示
-		$('.panel').eq(index).addClass('is-show');
+		$('.boards').eq(index).addClass('is-show');
 	});
 });
