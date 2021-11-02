@@ -5,6 +5,7 @@ class BoardsController < ApplicationController
 
   def index
     @pagy, @boards = pagy(Board.all.order(created_at: :desc))
+    @pagy, @ranking_boards = pagy(Board.all.order(likes: :desc))
   end
 
   def new
