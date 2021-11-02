@@ -1,0 +1,23 @@
+.tabs{
+  display: flex;
+  justify-content: center;
+}
+
+.tab{
+  flex-grow: 1;
+  list-style:none;
+  text-align:center;
+  cursor:pointer;
+}
+
+.panel-group{
+  border-top:none;
+}
+
+.boards{
+  display:none;
+}
+
+.is-show{
+  display:block;
+}
