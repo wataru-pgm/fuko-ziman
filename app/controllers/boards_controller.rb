@@ -14,8 +14,11 @@ class BoardsController < ApplicationController
 
   def create
     @board = Board.new(board_params)
-    @board.save
-    redirect_to boards_path, notice: "投稿しました。"
+    if @board.save
+      redirect_to boards_path, notice: "投稿しました。"
+    else
+      render :new
+    end
   end
 
   def show
@@ -26,10 +29,6 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:board_id])
     @like = @board.likes + 100
     @board.update(likes: @like)
-  end
-
-  def ranking
-    @pagy, @ranking_boards = pagy(Board.all.order(likes: :desc))
   end
 
   private

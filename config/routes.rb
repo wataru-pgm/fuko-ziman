@@ -3,6 +3,5 @@ Rails.application.routes.draw do
   root 'boards#top'
   resources :boards do
     post 'likes', to: 'boards#likes'
-    get 'ranking', on: :collection
   end
 end
