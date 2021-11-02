@@ -1,0 +1,24 @@
+.tabs{
+  display: flex;
+  justify-content: center;
+}
+
+.tab{
+  flex-grow: 1;
+  padding:5px;
+  list-style:none;
+  text-align:center;
+  cursor:pointer;
+}
+
+.panel-group{
+  border-top:none;
+}
+
+.panel{
+  display:none;
+}
+
+.panel.is-show{
+  display:block;
+}

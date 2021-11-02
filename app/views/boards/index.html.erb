@@ -1,14 +1,14 @@
-<h1 class='is-size-1'>新着順</h1>
+<h1 class='is-size-1'>みんなの不幸一覧</h1>
 
-<div class="tabs is-toggle is-fullwidth is-large">
+<div class="tabs is-toggle is-fullwidth ">
   <ul>
-    <li class="is-active">
+    <li class="tab is-active">
       <a>
         <span class="icon"><i class="fas fa-image" aria-hidden="true"></i></span>
         <span>新着順</span>
       </a>
     </li>
-    <li>
+    <li class="tab">
       <a>
         <span class="icon"><i class="fas fa-music" aria-hidden="true"></i></span>
         <span>ランキング</span>
@@ -23,17 +23,3 @@
 </div>
 
 <%== pagy_bulma_nav(@pagy) %>
-
-<script>
-jQuery(function($){
-	$('.tab').click(function(){
-		$('.is-active').removeClass('is-active');
-		$(this).addClass('is-active');
-		$('.is-show').removeClass('is-show');
-        // クリックしたタブからインデックス番号を取得
-		const index = $(this).index();
-        // クリックしたタブと同じインデックス番号をもつコンテンツを表示
-		$('.panel').eq(index).addClass('is-show');
-	});
-});
-</script>
