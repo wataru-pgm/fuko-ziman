@@ -1,15 +1,17 @@
-<h1 class='is-size-1'>詳細画面</h1>
-<p>この不幸自慢は合計で
-  <span id="js-board-likes-<%= @board.id %>"><%= @board.likes %></span>
-  円もらいました！
-</p>
+<div class="has-text-centered">
+  <h1 class='is-size-1'>詳細画面</h1>
+  <p>この不幸自慢は合計で
+    <span id="js-board-likes-<%= @board.id %>"><%= @board.likes %></span>
+    円もらいました！
+  </p>
 
-<h2 class='is-size-3'>タイトル</h2>
-<p><%= @board.title %></p>
+  <h2 class='is-size-3'>タイトル</h2>
+  <p><%= @board.title %></p>
 
-<h2 class='is-size-3'>内容</h2>
-<p><%= @board.body %></p>
+  <h2 class='is-size-3'>内容</h2>
+  <p><%= @board.body %></p>
 
-<%= link_to board_likes_path(@board), class: "level-item", method: :post, remote: true do %>
-  <i class="fas fa-yen-sign">100</i>
-<% end %>
+  <%= link_to board_likes_path(@board), class: "level-item", method: :post, remote: true do %>
+    <button class="button is-large fas fa-yen-sign">100</button>
+  <% end %>
+</div>
