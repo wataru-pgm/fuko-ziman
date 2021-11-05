@@ -1,24 +1,12 @@
-# README
+# サービス概要
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+日々の生活で不幸だと感じた体験を投稿し、
+同情ではなくお金がもらえるサービス。
 
-Things you may want to cover:
+# エンドユーザー
 
-* Ruby version
+自分は不幸だ！と思うことが過去に一度でもあった方。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 解決方法
+お金がもらえてる！と実感ができたら、
+不幸な出来事さえもハッピーに変わる。
