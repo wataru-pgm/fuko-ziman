@@ -1,21 +1,21 @@
 <div class="has-text-centered">
-  <h1 class='is-size-2 m-5'>詳細画面</h1>
-  <p class="sum m-5">この不幸自慢は合計で
-    <font size="+3">
+  <h1 class='is-size-1 m-5'>詳細画面</h1>
+  <p class="sum is-size-4 m-5">この不幸自慢は合計で
+    <font size="+5">
       <span id="js-board-likes-<%= @board.id %>"><%= @board.likes %></span>
     </font>
     円もらいました！
   </p>
 
 
-  <div class="card mb-5 ml-6 mr-6">
+  <div class="card">
     <div class="card-content">
       <div class="content">
-        <h2 class='is-size-3 mt-2'>タイトル</h2>
-        <p><%= @board.title %></p>
+        <h2 class='is-size-2 mt-2'>タイトル</h2>
+        <p><%= simple_format(@board.title) %></p>
 
-        <h2 class='is-size-3 m-5'>内容</h2>
-        <p><%= @board.body %></p>
+        <h2 class='is-size-2 m-5'>内容</h2>
+        <p><%= simple_format(@board.body) %></p>
       </div>
     </div>
   </div>
