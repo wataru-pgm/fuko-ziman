@@ -1,7 +1,5 @@
 class BoardsController < ApplicationController
-
-  def top
-  end
+  def top; end
 
   def index
     @pagy, @boards = pagy(Board.all.order(created_at: :desc))
@@ -15,7 +13,7 @@ class BoardsController < ApplicationController
   def create
     @board = Board.new(board_params)
     if @board.save
-      redirect_to boards_path, notice: "投稿しました。"
+      redirect_to boards_path, notice: '投稿しました。'
     else
       render :new
     end
