@@ -4,10 +4,16 @@
     <h2 class="title is-3 mb-5">同情するなら金をくれ!!</h2>
   </div>
 
-  <%= image_tag 'top.png', :width => '300', :height => '300' %>
+  <%= image_tag 'top.png', size: "300x300" %>
 
   <div class="top-menu">
     <%= link_to '新規投稿', new_board_path, class: "button is-large m-4" %><br>
     <%= link_to '一覧画面', boards_path, class: "button is-large" %>
   </div>
+
+  <ul class="policy mt-5 mb-5">
+    <li>利用規約<li>
+    <li>プライバシーポリシー</li>
+    <li>お問い合わせフォーム</li>
+  </ul>
 </div>
