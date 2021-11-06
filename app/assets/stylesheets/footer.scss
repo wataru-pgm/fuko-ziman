@@ -1,8 +1,10 @@
-.footer {
+footer {
   background-color: rgb(235, 159, 66);
-  padding: 10px;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
 }
 
 .content {
-  margin-top: 4px;
+  margin-top: 20px;
 }
