@@ -16,6 +16,13 @@
 
         <h2 class='is-size-2 m-5'>内容</h2>
         <p><%= simple_format(@board.body) %></p>
+
+        <div class='twitter-button button is-focused'>
+          <%= link_to "https://twitter.com/intent/tweet?url=https://fuko-ziman.herokuapp.com/boards/#{@board.id}&text=不幸自慢【#{@board.title}】を投稿しました。%0a同情するならお金ください！%20&hashtags=不幸自慢,同情するなら金をくれ,不幸,お金&lang=ja", title: 'Twitter', target: :_blank, rel: 'noopener noreferrer'  do %>
+            <i class="fab fa-twitter share-button"></i>
+            twitterにシェア
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

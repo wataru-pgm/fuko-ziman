@@ -1,6 +1,6 @@
 <div class="box ml-6 mr-6 p-1">
   <article class="media">
-    <div class="media-content m-2">
+    <div class="media-content m-1">
       <div class="content">
         <%= link_to board.title, "/boards/#{board.id}" %>
       </div>
@@ -10,7 +10,7 @@
         <%= board.likes %>
       </div>
 
-      <div class='twitter-button'>
+      <div class='twitter-button button is-focused'>
         <%= link_to "https://twitter.com/intent/tweet?url=https://fuko-ziman.herokuapp.com/boards/#{board.id}&text=不幸自慢【#{board.title}】を投稿しました。%0a同情するならお金ください！%20&hashtags=不幸自慢,同情するなら金をくれ,不幸,お金&lang=ja", title: 'Twitter', target: :_blank, rel: 'noopener noreferrer'  do %>
           <i class="fab fa-twitter share-button"></i>
         <% end %>
