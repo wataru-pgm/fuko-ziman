@@ -1,0 +1,10 @@
+ja:
+  boards:
+    index:
+      title: 'みんなの不幸一覧'
+    new:
+      title: '新規投稿'
+    show:
+      title: '詳細画面'
+      body: '不幸な思い出'
+    

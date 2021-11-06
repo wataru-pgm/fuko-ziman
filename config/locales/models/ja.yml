@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      board:
+        title: タイトル
+        body: 不幸な思い出
+        likes: 円
