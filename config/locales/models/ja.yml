@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    models:
+      board:
+    attributes:
+      board:
+        title: タイトル
+        body: 不幸な出来事

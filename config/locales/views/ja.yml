@@ -1,0 +1,13 @@
+ja:
+  boards:
+    title: '不幸自慢'
+    index:
+      title: 'みんなの不幸一覧'
+      new: 新着順
+      ranking: 'ランキング順'
+    new:
+      title: '新規投稿'
+    show:
+      title: '詳細画面'
+      in-title: 'タイトル'
+      in-body: '不幸な思い出'

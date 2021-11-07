@@ -1,5 +1,5 @@
 <div class="has-text-centered">
-  <h2 class='is-size-2 m-3'>新規投稿</h2>
+  <h2 class='is-size-2 m-3'><%= t ".title" %></h2>
 
   <%= form_with model: @board, local: true do |f| %>
     <% if @board.errors.any? %>
@@ -13,12 +13,12 @@
 
     <div class="form">
     <%= f.label :title, 'タイトル', class: "is-size-3" %><br>
-    <%= f.text_field :title, placeholder: "タイトル", size: "30", class: "is-size-4" %><br>
+    <%= f.text_field :title, placeholder: "0〜20文字まで", size: "25", class: "is-size-4" %><br>
 
     <br>
 
-    <%= f.label :body, '内容', class: "is-size-4" %><br>
-    <%= f.text_area :body, placeholder: "不幸な思い出", size: "30x10", class: "is-size-4 mb-5" %><br>
+    <%= f.label :body, '不幸な出来事', class: "is-size-3" %><br>
+    <%= f.text_area :body, placeholder: "0〜200文字まで", size: "25x10", class: "is-size-4 mb-5" %><br>
     </div>
     <%= f.submit '投稿する' %>
   <% end %>
