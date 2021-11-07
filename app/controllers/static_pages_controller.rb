@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
-  def top
+
+  def terms
+  end
+
+  def privacy
   end
 end

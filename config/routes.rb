@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :boards do
     post 'likes', to: 'boards#likes'
   end
+
+  get '/terms', to: 'static_pages#terms'
+  get '/privacy', to: 'static_pages#privacy'
 end

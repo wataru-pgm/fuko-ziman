@@ -11,3 +11,8 @@ ja:
       title: '詳細画面'
       in-title: 'タイトル'
       in-body: '不幸な思い出'
+  static_pages:
+    terms:
+      title: '利用規約'
+    privacy:
+      title: 'プライバシーポリシー'
