@@ -10,8 +10,29 @@ p {
   font-size: 25px;
 }
 
+.twitter-button {
+  background-color: #7bcbf1;
+}
+
+.fa-twitter {
+  color: #fff;
+}
+
+.tab {
+  background-color: #d5e7b3;
+}
+
 .box {
   background: #bfbdbb;
+}
+
+.pagination-link {
+  background-color: #d5e7b3;
+}
+
+.pagination-link.is-current {
+  background-color: #6B8E23;
+  color: #fff;
 }
 
 // 100ボタン
