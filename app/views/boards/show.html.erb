@@ -1,5 +1,5 @@
 <div class="has-text-centered">
-  <h1 class='is-size-1 m-3'>詳細画面</h1>
+  <h1 class='is-size-1 m-3'><%= t ".title" %></h1>
   <p class="sum is-size-3">この不幸自慢は合計で<br>
     <font size="+5">
       <span id="js-board-likes-<%= @board.id %>"><%= @board.likes %></span>円
@@ -11,10 +11,10 @@
   <div class="box">
     <div class="field">
       <div class="content">
-        <h2 class='is-size-3 mt-2'>タイトル</h2>
+        <h2 class='is-size-3 mt-2'><%= t("boards.show.in-title") %></h2>
         <p><%= simple_format(@board.title) %></p>
 
-        <h2 class='is-size-3 m-5'>内容</h2>
+        <h2 class='is-size-3 m-5'><%= t("boards.show.in-body") %></h2>
         <p><%= simple_format(@board.body) %></p>
 
         <div class='twitter-button button is-focused'>

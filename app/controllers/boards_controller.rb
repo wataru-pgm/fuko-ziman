@@ -13,7 +13,7 @@ class BoardsController < ApplicationController
   def create
     @board = Board.new(board_params)
     if @board.save
-      redirect_to boards_path, notice: '投稿しました。'
+      redirect_to boards_path
     else
       render :new
     end

@@ -9,11 +9,11 @@
       <div class="navbar-item">
         <div class="buttons">
           <% unless current_page?(root_path)||current_page?(new_board_path) %>
-            <%= link_to '新規投稿', new_board_path, class: "button" %>
+            <%= link_to t("boards.new.title"), new_board_path, class: "button" %>
           <% end %>
 
           <% unless current_page?(root_path)||current_page?(boards_path) %>
-            <%= link_to '一覧画面', boards_path, class: "button" %>
+            <%= link_to t("boards.index.title"), boards_path, class: "button" %>
           <% end %>
         </div>
       </div>
