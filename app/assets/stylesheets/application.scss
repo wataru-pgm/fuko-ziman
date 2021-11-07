@@ -28,9 +28,10 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
 body {
+  background-color: #999966;
   font-family: 'Potta One', cursive;
 }
 
 main {
-  min-height: 662px;
+  min-height: 800px;
 }

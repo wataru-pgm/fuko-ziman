@@ -14,6 +14,10 @@
   border-top: none;
 }
 
+a {
+  color: #4a4a4a;
+}
+
 .boards{
   display: none;
 }
@@ -28,4 +32,22 @@
 
 .has-text-right {
   font-size: 25px;
+}
+
+.tabs.is-toggle li.is-active a {
+  background-color: #6B8E23;
+  border-color: #6B8E23;
+  color: #fff;
+  z-index: 1;
+}
+
+.pagination-link.is-current {
+  background-color: #dbdbdbdb;
+  border-color: #dbdbdb;
+  color: #4a4a4a;
+}
+
+.button.is-focused {
+  border-color: #6B8E23;
+  color: #6B8E23;
 }
