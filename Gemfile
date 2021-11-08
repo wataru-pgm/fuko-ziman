@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bulma-rails'
 gem 'pagy'
 gem 'rails-i18n'
+gem 'meta-tags'
 
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
