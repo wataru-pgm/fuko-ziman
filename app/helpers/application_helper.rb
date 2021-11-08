@@ -1,12 +1,6 @@
 module ApplicationHelper
   include Pagy::Frontend
-
-  def page_title(page_title = '')
-    base_title = '不幸自慢-同情するなら金をくれ！！-'
-
-    page_title.empty? ? base_title : "#{page_title} | #{base_title}"
-  end
-
+  
   def default_meta_tags
     {
       site: '不幸自慢',
@@ -27,7 +21,6 @@ module ApplicationHelper
         description: :description,
         type: 'website',
         url: request.original_url,
-        image: image_url('ogp.png'),
         locale: 'ja_JP'
       },
       twitter: {
