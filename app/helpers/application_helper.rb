@@ -1,6 +1,6 @@
 module ApplicationHelper
   include Pagy::Frontend
-  
+
   def default_meta_tags
     {
       site: '不幸自慢',
@@ -21,6 +21,7 @@ module ApplicationHelper
         description: :description,
         type: 'website',
         url: request.original_url,
+        image: image_url('ogp.png'),
         locale: 'ja_JP'
       },
       twitter: {
