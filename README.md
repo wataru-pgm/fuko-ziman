@@ -39,4 +39,6 @@ Rubocop
 HTML  
 CSS(SCSS)  
 BULMA 　
-JavaScript(jQuery)  
+JavaScript(jQuery)
+
+
