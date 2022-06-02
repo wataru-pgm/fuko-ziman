@@ -28,13 +28,15 @@
 </div>
 
 ### 使用技術
-　　
+
 #### バックエンド
-Ruby 2.7.2　　
-Rails 6.1.4　　
+Ruby 2.7.2  
+Rails 6.1.4  
+Rubocop  
+
 
 #### フロントエンド
-HTML　　
-CSS(SCSS)　　
-BULMA　　
-jQuery　　
+HTML  
+CSS(SCSS)  
+BULMA 
+JavaScript(jQuery)  
