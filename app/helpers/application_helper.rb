@@ -4,7 +4,7 @@ module ApplicationHelper
   def default_meta_tags
     {
       site: '不幸自慢',
-      title: '同情するなら金をくれ！！',
+      title: '同情するなら金をくれ！',
       reverse: true,
       charset: 'utf-8',
       description: '過去の不幸を暴露してみんなからお金をもらうアプリ',
