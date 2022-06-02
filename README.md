@@ -38,7 +38,7 @@ Rubocop
 #### フロントエンド
 HTML  
 CSS(SCSS)  
-BULMA 　
+BULMA  
 JavaScript(jQuery)
 
 
