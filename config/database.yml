@@ -84,3 +84,5 @@ production:
   database: fuko_ziman_production
   username: fuko_ziman
   password: <%= ENV['FUKO_ZIMAN_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  url: <%= ENV['FUKO_ZIMAN_DATABASE_PASSWORD'] %>
