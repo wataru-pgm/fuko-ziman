@@ -3,6 +3,7 @@
 set -o errexit
 
 bundle install
-bundle exec rake assets:precompile
-bundle exec rake assets:clean
-bundle exec rake db:migrate
+yarn install
+yarn build # jsファイルをesbuildでバンドルしているため
+bundle exec rake assets:precompile # cssはsprocketsを使っているため
+undle exec rails db:migrate
